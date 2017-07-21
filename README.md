@@ -1,7 +1,7 @@
-# litparse - Basic literate programming using Markdown.
+# `litparse` - Basic literate programming using Markdown
 
 ## Why?
-`litparse` is a Bash program that [extracts](#extraction), [concatenates](#processing), and [executes](#display-execution) code blocks from [Markdown] files.
+`litparse` is a Bash program that [extracts](#extraction), [concatenates](#processing), and [executes](#display--execution) code blocks from [Markdown] files.
 
 ```bash
 #!/usr/bin/env bash
@@ -11,7 +11,7 @@
 The intermingling of natural language with code enables a basic form of [literate programming] similar to [Docco], [Pycco], and [codedown]. Note that the purpose of `litparse` is to extract and run code rather than generate documentation.
 
 [codedown]: https://github.com/earldouglas/codedown
-[Docco]: https://pycco-docs.github.io/pycco/
+[Docco]: https://github.com/jashkenas/docco
 [literate programming]: https://en.wikipedia.org/wiki/Literate_programming
 [Markdown]: https://daringfireball.net/projects/markdown/syntax
 [Pycco]: https://github.com/pycco-docs/pycco
@@ -26,8 +26,8 @@ Note that the following code block is not fenced with a language so that these l
     litparse -l bash -p README.md > dist/litparse.sh
     sudo install dist/litparse.sh /usr/bin/litparse
 
-# Examples
-There are simple examples in the [test directory](./tests). Here are some additional examples:
+## Examples
+There are simple examples in the [test directory](./test). Here are some additional examples:
 
 **Python**
 ```python
@@ -93,7 +93,7 @@ SCRIPT_VERSION='0.1.0'
 [semver]: http://semver.org/
 
 ## Usage
-The `usage` function displays a string with the description of the script and the possible options. See [Parsing Arguments][#parsing-arguments] for more details of how these options are used.
+The `usage` function displays a string with the description of the script and the possible options. See [Arguments][#arguments] for more details of how these options are used.
 
 ```bash
 # Display the script usage.
@@ -267,4 +267,4 @@ else
 fi # printed or executed the script
 ```
 
-There's nothing else for us to do after that but exit.
+And that's all there is.
