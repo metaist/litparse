@@ -93,7 +93,7 @@ SCRIPT_VERSION='0.1.0'
 [semver]: http://semver.org/
 
 ## Usage
-The `usage` function displays a string with the description of the script and the possible options. See [Arguments][#arguments] for more details of how these options are used.
+The `usage` function displays a string with the description of the script and the [possible options](#arguments).
 
 ```bash
 # Display the script usage.
